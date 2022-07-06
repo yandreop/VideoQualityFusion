@@ -10,7 +10,7 @@ Aaron Chadha, Ioannis Katsavounidis, Ayan Kumar Bhunia, Cosmin Stejerean, Mohamm
 This repository contains excel files of metadata and raw mean opinion scores (MOS) for individual raters on AV2CTC data, for the coding and denoising applications described in our paper.  The data is extracted over multiple codecs (vp9, x264 and x265), multiple crfs and resolutions.  We also provide the recovered quality scores after SUREAL processing [1], confidence intervals and quality metrics (VMAF, VMAF-NEG, SSIM and PSNR) in the excel files, which can be fused into a single metric using the method decribed in Section 3.3 of the paper.  The source videos for this data can be found at: 
 
 ### SUREAL processing 
-Prior to fusion into a single quality metric, we clean the MOS ratings with SUREAL processing [1] to obtain the recovered quality scores.  The excel data must first be converted to dictionary format (example provided for coding application). We then provide a simple script for extracting the recovered quality scores from the MOS ratings.
+Prior to fusion into a single quality metric, we clean the MOS ratings with SUREAL processing [1] to obtain the recovered quality scores.  The excel data must first be converted to dictionary format in a py file (example provided for coding application). We then provide a simple script for extracting the recovered quality scores from the MOS ratings.
 The script writes the recovered quality scores back to the original excel file:
 
 `
